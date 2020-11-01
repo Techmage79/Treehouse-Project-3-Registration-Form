@@ -1,0 +1,208 @@
+* {
+  font-family: 'Anton', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+box-sizing: border-box;
+}
+
+/***** Base Styles****/
+
+body {
+/*max-width: 400px;*/
+margin: auto;
+  color: #8d93ab;
+  background: #f1f3f8;
+
+}
+
+h3 {
+font-size: 25px;
+margin-bottom: 0;
+
+}
+
+legend {
+  font-size: 25px;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+}
+
+input[class="contact"] {
+margin: 10px 0 10px;
+width: 100%;
+line-height: 32px;
+border-radius: .5em;
+border: none;
+}
+
+select {
+margin: 10px 0 10px;
+padding: 10px;
+width: 100%;
+border-radius: .5em;
+border: none;
+}
+
+input[class="zip"] {
+width: 30%;
+margin: 10px 0 10px;
+line-height: 32px;
+border-radius: .5em;
+border: none;
+}
+
+input[class="news-letter"] {
+  margin: 10px 0 10px;
+}
+
+input[value="plain_text_format"] {
+  margin-bottom: 30px;
+}
+
+label[class="news-label"] {
+  padding-left: 10px;
+}
+
+
+textarea {
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+margin-top: 15px;
+border-radius: .5em;
+border: none;
+resize: none;
+}
+
+button {
+width: 100%;
+height: 80px;
+margin: 10px 0 10px;
+background: #8d93ab;
+color: #f1f3f8;
+border-radius: .5em;
+cursor: pointer;
+}
+
+fieldset {
+  border: none;
+
+}
+
+footer {
+text-align: center;
+padding: 30px;
+}
+
+
+/***** Class Styles *****/
+
+.main-header {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.title {
+font-family: 'Anton', sans-serif;
+font-size: 30px;
+background: #393b44;
+padding: 25px 0;
+margin: 0;
+width: 100%;
+text-align: center;
+}
+
+.header-p {
+text-align: center;
+margin: 0 0 8px;
+padding: 15px 10px 20px;
+ }
+
+
+.con-info {
+  padding-top: 20px;
+}
+
+/***** Horizontal Rule *****/
+
+.top {
+  border: 3px solid #393b44;
+width: 96%;
+}
+
+.mid ,
+.bottom {
+  border: 1px solid #393b44;
+  width: 96%;
+}
+
+/***** placeholder Styles *****/
+
+::placeholder {
+color: #8d93ab;
+text-align: right;
+padding-right: 8px;
+font-style: italic;
+}
+
+input[type="tel"]::placeholder {
+  color: #8d93ab;
+  text-align: left;
+  font-style: italic;
+
+}
+
+input[name="user_address"]::placeholder {
+  color: #8d93ab;
+  text-align: left;
+  font-style: italic;
+}
+
+textarea:focus,
+input[class="zip"]:focus,
+select[name="user_state"]:focus,
+input[class="contact"]:focus {
+background-color: #d6e0f0;
+  transition-duration: 2s;
+  outline-color: #8d93ab;
+
+}
+
+
+/***** Media Queries *****/
+
+@media(min-width: 768px) {
+
+body {
+  max-width: none;
+}
+.wrapper {
+  max-width: 600px;
+  margin: auto;
+
+}
+
+.title {
+  width: 100%;
+}
+
+
+input[class="contact"] {
+  width: 75%;
+
+}
+
+label[class="cont-label"] {
+  min-width: 25%;
+  padding-top: 20px;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+}
